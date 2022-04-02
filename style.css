@@ -18,6 +18,12 @@ footer {
   text-align: center;
 }
 
+.menu a:hover,
+.menu a:focus {
+  color: #fff;
+  background-color: #dd3949;
+}
+
 .background {
   background: url(./img/background.png) center no-repeat fixed;
   background-size: cover;
@@ -25,6 +31,8 @@ footer {
   height: 100vh;
   border-radius: 0px 0px 20px 20px;
   margin-top: 30px;
+  padding: 0;
+
 
 }
 
@@ -150,6 +158,11 @@ h1 {
 }
 
 /* ****************CONTACT**************** */
+
+#background {
+  position: none !important;
+}
+
 #contact {
   border-radius: 20px !important;
   padding: 25px;
@@ -166,15 +179,38 @@ footer {
   padding: 15px 0 4px 0;
 }
 
+.icons:hover,
+.mentions:hover,
+.name:hover {
+  opacity: 0.6;
+
+}
+
 /* ***********MEDIA QUERIES****************************************** */
-/* instruction pour ecran jusqu'à 990px */
+/* instruction pour ecran jusqu'à 7600px */
 @media screen and (max-width: 760px) {
+
   #transition {
     display: none;
 
   }
 
   #don {
+    display: none;
+
+  }
+
+  #contact img {
+    display: none;
+
+  }
+
+  #projets {
+    display: none;
+
+  }
+
+  footer img {
     display: none;
 
   }
