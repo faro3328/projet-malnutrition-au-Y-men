@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Dancing Script', cursive;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+.nav-item,
+#transition,
+footer {
+  text-align: center;
+}
+
+.background {
+  background: url(./img/background.png) center no-repeat fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: 30px;
+
+}
+
+
+h1 {
+  font-size: 3em;
+  padding: 400px 0 0 0;
+  color: white;
+  text-shadow: -3px 3px 2px #7e210a;
+
+}
+
+/* ***********************ACTIONS************** */
+#actions {
+  background-color: #E7DFDA;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.elements {
+  padding: 70px 0;
+}
+
+.elements img {
+  width: 200px;
+
+}
+
+.elements img:hover {
+  opacity: 0.5;
+}
+
+.elements p {
+  font-size: 1.2em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  padding-right: 20 px;
+}
+
+.elements .button {
+  text-align: right;
+  margin: 15px 4% 0 0;
+
+}
+
+/* ****************PROJETS**************** */
+#projets {
+  color: #fff;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.tips {
+  height: 200px;
+  width: 200px;
+  /* auto centre à droite et à gauche/ */
+  margin: 20px auto;
+}
+
+.tips h4 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: -3px 3px 2px #181413;
+}
+
+.tips:hover {
+  transform: scale(1.08);
+  opacity: 0.7;
+  transition: ease-out 0.2;
+}
+
+#transition img {
+  animation: coeur 12s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+
+}
+
+
+@keyframes coeur {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/* ****************EVENTS**************** */
+#events {
+  background-color: #E7DFDA;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+#carouselExampleFade img {
+  height: 50vh;
+}
+
+/* ****************CONTACT**************** */
+#contact {
+  border-radius: 20px !important;
+  padding: 25px;
+}
+
+#contact img:hover {
+  opacity: 0.6;
+}
+
+
+/* ****************FOOTER**************** */
+footer {
+
+  padding: 15px 0 4px 0;
+}
+
+/* ***********MEDIA QUERIES****************************************** */
+/* instruction pour ecran jusqu'à 990px */
+@media screen and (max-width: 760px) {
+  #transition {
+    display: none;
+
+  }
+
+  #don {
+    display: none;
+
+  }
+}
