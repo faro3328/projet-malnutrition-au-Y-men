@@ -18,10 +18,20 @@ footer {
   text-align: center;
 }
 
+strong:hover,
+strong:focus {
+  color: #fff;
+  background-color: #dd3949;
+  border-radius: 5%;
+  padding: 0;
+
+}
+
 .menu a:hover,
 .menu a:focus {
   color: #fff;
   background-color: #dd3949;
+  border-radius: 5%;
 }
 
 .background {
@@ -104,7 +114,7 @@ h1 {
 .tips:hover {
   transform: scale(1.08);
   opacity: 0.7;
-  transition: ease-out 0.2;
+  transition: ease-in 0.2;
 }
 
 #transition img {
@@ -172,6 +182,10 @@ h1 {
   opacity: 0.6;
 }
 
+#comments {
+  resize: none;
+}
+
 
 /* ****************FOOTER**************** */
 footer {
@@ -186,7 +200,36 @@ footer {
 
 }
 
+/* **********************events.html******************************* */
+.background2 {
+  background: url(./img/famine.png) center left no-repeat fixed;
+  background-size: cover;
+  height: 100vh;
+  border-radius: 0px 0px 20px 20px;
+  margin-top: 30px;
+  padding: 0;
+}
+
+#partners {
+  color: #fff;
+  border-radius: 20px;
+}
+
+#icon2 {
+  padding-top: 70%;
+}
+
+#articleNews {
+  background-color: #E7DFDA;
+  color: black;
+  border-radius: 20px;
+  margin: 0 2% 0 2%;
+
+}
+
+
 /* ***********MEDIA QUERIES****************************************** */
+
 /* instruction pour ecran jusqu'à 7600px */
 @media screen and (max-width: 760px) {
 
@@ -212,6 +255,22 @@ footer {
 
   footer img {
     display: none;
+
+  }
+
+  #partners {
+    display: none;
+
+  }
+
+  h4 {
+    visibility: hidden;
+  }
+
+  .background2 {
+    background: url(./img/famine.png) no-repeat left;
+    width: 100vh;
+    padding: 0, 40%, 0, 5%;
 
   }
 }
