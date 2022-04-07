@@ -271,6 +271,11 @@ footer {
   cursor: pointer;
 }
 
+.bar:hover {
+  background: #181413 !important;
+
+}
+
 .imgCard {
   transition: transform ease-in-out 200ms;
 }
@@ -288,7 +293,9 @@ footer {
   }
 
   .background {
+    background: url(./img/background.jpg) center no-repeat;
     margin: 0 10px 0 10px;
+
   }
 
   #actions {
@@ -320,6 +327,11 @@ footer {
 
   }
 
+  header img {
+    display: none;
+
+  }
+
   #partners {
     display: none;
 
@@ -329,8 +341,13 @@ footer {
     visibility: hidden;
   }
 
+  em {
+    visibility: hidden;
+  }
+
   .background2 {
     margin: 0 20px 0 20px;
+    background: url(./img/famine.jpg) center left no-repeat;
   }
 
   #eventsH1 {
