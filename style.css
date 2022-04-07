@@ -204,7 +204,7 @@ footer {
 .background2 {
   background: url(./img/famine.png) center left no-repeat fixed;
   background-size: cover;
-  height: 100vh;
+  height: 60vh;
   border-radius: 0px 0px 20px 20px;
   margin-top: 30px;
   padding: 0;
@@ -216,17 +216,23 @@ footer {
 }
 
 #icon2 {
-  padding-top: 70%;
+  padding-top: 50%;
 }
 
-#articleNews {
+#EvenNews {
   background-color: #E7DFDA;
   color: black;
   border-radius: 20px;
   margin: 0 2% 0 2%;
-
 }
 
+.imgCard {
+  transition: transform ease-in-out 200ms;
+}
+
+.imgCard:hover {
+  transform: scale(0.7) rotate(10deg);
+}
 
 /* ***********MEDIA QUERIES****************************************** */
 
@@ -271,6 +277,10 @@ footer {
     background: url(./img/famine.png) no-repeat left;
     width: 100vh;
     padding: 0, 40%, 0, 5%;
+  }
+
+  #eventsH1 {
+    margin-right: 50%;
 
   }
 }
