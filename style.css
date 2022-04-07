@@ -24,6 +24,7 @@ strong:focus {
   background-color: #dd3949;
   border-radius: 5%;
   padding: 0;
+  cursor: pointer;
 
 }
 
@@ -35,9 +36,8 @@ strong:focus {
 }
 
 .background {
-  background: url(./img/background.png) center no-repeat fixed;
+  background: url(./img/background.jpg) center no-repeat fixed;
   background-size: cover;
-  width: 100vw;
   height: 100vh;
   border-radius: 0px 0px 20px 20px;
   margin-top: 30px;
@@ -59,7 +59,7 @@ h1 {
 #actions {
   background-color: #E7DFDA;
   border-radius: 20px;
-  padding: 25px;
+  padding: 30px;
 }
 
 .elements {
@@ -169,13 +169,20 @@ h1 {
 
 /* ****************CONTACT**************** */
 
-#background {
-  position: none !important;
+#contact {
+  border-radius: 20px;
+
 }
 
-#contact {
+#forms {
+  padding-left: 5%;
+  padding-bottom: 5%;
+  margin-top: 5px;
+}
+
+#contact img {
+  margin-left: 10%;
   border-radius: 20px !important;
-  padding: 25px;
 }
 
 #contact img:hover {
@@ -197,17 +204,23 @@ footer {
 .mentions:hover,
 .name:hover {
   opacity: 0.6;
+  cursor: pointer;
 
 }
 
 /* **********************events.html******************************* */
 .background2 {
-  background: url(./img/famine.png) center left no-repeat fixed;
+  background: url(./img/famine.jpg) center left no-repeat fixed;
   background-size: cover;
   height: 60vh;
   border-radius: 0px 0px 20px 20px;
-  margin-top: 30px;
+  margin-top: 50px;
   padding: 0;
+}
+
+#eventsH1 {
+  padding-top: 17%;
+
 }
 
 #partners {
@@ -226,6 +239,38 @@ footer {
   margin: 0 2% 0 2%;
 }
 
+.imgCardNew:hover {
+  opacity: 1;
+  cursor: pointer;
+  -webkit-animation: flash 1.5s;
+  animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+  0% {
+    opacity: .4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes flash {
+
+  0% {
+    opacity: .4;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.bar {
+  cursor: pointer;
+}
+
 .imgCard {
   transition: transform ease-in-out 200ms;
 }
@@ -238,6 +283,17 @@ footer {
 
 /* instruction pour ecran jusqu'à 7600px */
 @media screen and (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .background {
+    margin: 0 10px 0 10px;
+  }
+
+  #actions {
+    margin-top: -2%;
+  }
 
   #transition {
     display: none;
@@ -274,13 +330,11 @@ footer {
   }
 
   .background2 {
-    background: url(./img/famine.png) no-repeat left;
-    width: 100vh;
-    padding: 0, 40%, 0, 5%;
+    margin: 0 20px 0 20px;
   }
 
   #eventsH1 {
-    margin-right: 50%;
+    padding-top: 70%;
 
   }
 }
